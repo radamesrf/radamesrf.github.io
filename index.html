@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>By Radamés Freitas</title>
+	
+	<style>
+
+		* { margin:0; padding:0; } /* to remove the top and left whitespace */
+
+		html, body { width:100%; height:100%;  } /* just to be sure these are full screen*/
+
+		canvas { display:block; } /* To remove the scrollbars */
+
+		#rada{
+			position: absolute; overflow:hidden; z-index: 100;
+		}
+		
+		a{
+			color:white;
+		}
+		
+		.header{
+			position:absolute;
+			
+			border-bottom:1px solid white;
+			
+			background:none;
+			width:100%;
+			z-index: 200;
+			top:0;
+			padding:20px 0;
+			text-align: center;
+			font:12px arial;
+			
+			color:white;
+		}
+		
+		.footer{
+		
+			position:absolute;
+			border-top:1px solid white;
+			
+			
+			background:none;
+			width:100%;
+			z-index: 200;
+			bottom:0;
+			padding:20px 0;
+			text-align: center;
+			font:12px arial;
+			color:white;
+		}
+		
+	</style>
+	
+</head>
+<body style="background: url(images/espaco.jpg) no-repeat center;">
+
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+  
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+	
+	<div class="header">Desenvolvido por <a href="https://www.facebook.com/radamesrf?ref=tn_tnmn" target="blank_">Radamés Freitas</a> </div>
+
+	<canvas id="rada" width="100%" height="100%">
+		
+		Seu navegador é "peba". Use o Google Chrome!
+
+	</canvas>
+
+	
+	<script type="text/javascript" src="rada.min.js"></script>
+	
+	<div class="footer"><div class="fb-like" data-href="http://renanmarques.com/canvas3/" data-send="false" data-width="450" data-show-faces="true"></div></div>
+	
+</body>
+</html>
